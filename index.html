@@ -14,9 +14,9 @@
 
     <div class="create-box">
         <form>
-            <h1>Create Task</h1>
-            <input class="input-create" id="input-create-tittle" type="text" placeholder="New task">
-            <input class="input-create" id="input-create-date" type="date">
+            <h1 id="create-task-form-header">Create Task</h1>
+            <input class="input-create input-style" id="input-create-title" type="text" placeholder="New task">
+            <input class="input-create input-style" id="input-create-date" type="date">
             <br>
             <button class="button" id="button-create" type="submit">Add Task</button>
         </form>
@@ -25,12 +25,11 @@
     <div class="model-box">
         <form  class="model">
             <h1 id="model-header">Modify Task</h1>
-            <input class="input-modify" id="input_modify_title" type="text" placeholder="New title">
-            <input class="input-modify" id="input_modify_date" type="date"> 
+            <input class="input-style" id="input_modify_title" type="text" placeholder="New title">
+            <input class="input-style" id="input_modify_date" type="date"> 
             <button class="button" id="button-modify" type="submit">Update Task</button>
         </form>
     </div>
 </body>
-<script type="module" src="main.js"></script>
-<script type="module" src="localstorage.js"></script>
+<script  src="main.js"></script>
 </html>

@@ -8,6 +8,8 @@
 
 //funciones
 
+
+
 function create_task(title, date) {
 	const task = {
 		title,
@@ -26,7 +28,5 @@ function get_tasks(){
     let tasks = window.localStorage.getItem("TASKS") || []
     return tasks
 }*/
-
-
 
 //eventos
