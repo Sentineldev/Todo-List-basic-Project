@@ -7,21 +7,27 @@ html{
     font-size: 62.5%;
 }
 
-h2{
-    background-color: red;
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
     display: block;
 }
 body{
     background-color: white;
 }
 
+.create-box{
+    background-color: rgba(0, 0, 0, 0.801);
+    text-align: center;
+    color: white;
+}
 .model-box{
     background-color: rgba(0, 0, 0, 0.801);
     position: fixed;
     width: 100%;
     top: 0;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -58,7 +64,7 @@ body{
     margin: 0 auto;
     margin: 4rem auto;
     font-family: sans-serif;
-    font-weight: 500;
+    font-weight: 100;
     padding: 1rem;
     width: 50%;
 }

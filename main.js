@@ -1,10 +1,9 @@
-import {get_tasks} from "./localstorage.js"
-import update_storage from "./localstorage.js"
-let tasks;
-
-
-
-window.onload = ()=>{
-    tasks = get_tasks()
+function create_task(title, date) {
+	const task = {
+		title,
+		date
+	}
+	return task
 }
 
+console.log(create_task('Follar', 'Hoy'));
