@@ -5,6 +5,7 @@
 
 var tasks = [];
 var form_create_task = document.querySelector('#create-form');
+var task_table_body = document.querySelector('#task-table-body');
 
 //funciones
 
@@ -23,15 +24,32 @@ function add_task(title, date) {
 	tasks.push(new_task)
 }
 
+function update_table(){
+	var last_table = tasks.length - 1;
+	var new_table = `
+		<tr>
+    		<td>${tasks[last_table]['title']}</td>
+    		<td>${tasks[last_table]['date']}</td>
+    		<td>Modificar</td>
+    		<td>Eliminar</td>
+    	</tr>
+	`
+	task_table_body.insertAdjacentHTML('beforeend', new_table)
+	
+}
+
 form_create_task.onsubmit = (e) => {
 	e.preventDefault()
 	var title = document.querySelector('#input-create-title').value;
 	var date = document.querySelector('#input-create-date').value;
-	if (title != "" && date != ''){
+	if (title != '' && date != ''){
 		add_task(title, date)
 	}
 	console.log(tasks);
+	update_table()
 }
+
+
 
 //Actualiza la data que este en el localstorage
 /*function update_storage(data){
