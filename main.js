@@ -3,8 +3,8 @@
 
 //variables
 
-
-
+var tasks = [];
+var form_create_task = document.querySelector('#create-form');
 
 //funciones
 
@@ -16,6 +16,21 @@ function create_task(title, date) {
 		date
 	}
 	return task
+}
+
+function add_task(title, date) {
+	var new_task = create_task(title, date);
+	tasks.push(new_task)
+}
+
+form_create_task.onsubmit = (e) => {
+	e.preventDefault()
+	var title = document.querySelector('#input-create-title').value;
+	var date = document.querySelector('#input-create-date').value;
+	if (title != "" && date != ''){
+		add_task(title, date)
+	}
+	console.log(tasks);
 }
 
 //Actualiza la data que este en el localstorage
