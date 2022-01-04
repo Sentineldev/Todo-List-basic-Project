@@ -6,3 +6,60 @@
 html{
     font-size: 62.5%;
 }
+
+h2{
+    background-color: red;
+    display: block;
+}
+body{
+    background-color: white;
+}
+
+.model-box{
+    background-color: rgba(0, 0, 0, 0.801);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none;
+}
+
+.model{
+    background-color: white;
+    box-shadow: 0px 0px 1px white,0px 0px 2px white;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 6rem 1rem 4rem 1rem;
+}
+#model-header{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: clamp(1.6rem,2.4vw,2.4rem);
+
+}
+.input-modify{
+    padding: 0.8rem;
+    margin: 2rem 1rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    font-size: clamp(1.4rem,2.5vw,1.6rem);
+    font-family: sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid #aaa;
+}
+.button{
+    margin: 0 auto;
+    margin: 4rem auto;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    width: 50%;
+}
+

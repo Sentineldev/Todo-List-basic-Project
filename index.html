@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    	<h1>To-Do List - GitHub Project</h1>
-    	<p>Hecho por Kevin Rojas y Jesus Figuera</p>
-    </header>
+    <div class="model-box">
+        <form  class="model">
+            <h1 id="model-header">Modify Task</h1>
+            <input class="input-modify" id="input_modify_title" type="text" placeholder="New title">
+            <input class="input-modify" id="input_modify_date" type="date"> 
+            <button class="button" id="button-modify" type="submit">Update Task</button>
+        </form>
+    </div>
 </body>
-<script src="main.js"></script>
+<script type="module"  src="main.js"></script>
+<script type="module" src="localstorage.js"></script>
 </html>
