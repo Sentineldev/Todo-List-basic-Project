@@ -29,7 +29,7 @@ function getIndex(htmlParent){
 function modify_task(e){
 
 	//obtener el elemento seleccionado y su elemento padre
-	const selected_element_parent = e.srcElement.parentElement
+	const selected_element_parent = e.srcElement.parentElement.parentElement
 
 	
 	//obtener el indice del elemento en el array de elmentos html para obtener el indice del objeto en el array de tasks
@@ -46,8 +46,8 @@ function modify_task(e){
 	
 
 	//establecer los valores de los inputs con los valores en el objeto task
-	input_modify_title.value = selected_element_parent.children[0].innerText
-	input_modify_date.value = selected_element_parent.children[1].innerText
+	input_modify_date.value = selected_element_parent.children[0].innerText
+	input_modify_title.value = selected_element_parent.children[1].innerText
 
 	//Ocultar la ventana emergente modificar el objeto y modificar el elemento en la tabla html
 	modify_form.onsubmit = (e)=>{
@@ -56,15 +56,15 @@ function modify_task(e){
 		tasks[index].title =  input_modify_title.value
 		tasks[index].date = input_modify_date.value
 		model_box.style.display = "none"
-		selected_element_parent.children[0].innerText = tasks[index].title
-		selected_element_parent.children[1].innerText = tasks[index].date
+		selected_element_parent.children[0].children[0].innerText = tasks[index].date
+		selected_element_parent.children[1].children[0].innerText = tasks[index].title
 	}
 
 }
 
 function delete_task(e){
 	//Obtener el padre del elemento seleccionado
-	const selected_element_parent = e.srcElement.parentElement
+	const selected_element_parent = e.srcElement.parentElement.parentElement
 
 	//obtener el indice del elemento en  el html
 	const index = getIndex(selected_element_parent)
@@ -92,10 +92,22 @@ function update_table(){
 	var last_table = tasks.length - 1;
 	var new_table = `
 		<tr>
-    		<td>${tasks[last_table]['title']}</td>
-    		<td>${tasks[last_table]['date']}</td>
-    		<td>Modificar</td>
-    		<td>Eliminar</td>
+    		<td class="task-date">
+    		    <h1>
+    		    	${tasks[last_table]['date']}
+    		   	</h1>
+    		</td>
+    		<td class="task-title">
+    			<h1>
+    				${tasks[last_table]['title']}
+    			</h1>
+    		</td>
+    		<td class="task-icons">
+                <img class="svg" src="pen.svg" alt="">          
+            </td>
+            <td class="task-icons">
+                <img class="svg" src="trash.svg" alt="">
+            </td>
     	</tr>
 	`
 	task_table_body.insertAdjacentHTML('beforeend', new_table)
