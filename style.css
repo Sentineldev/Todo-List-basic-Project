@@ -86,3 +86,30 @@ body{
     width: 200px;
 }
 
+.svg{
+    width: 32px;
+    cursor: pointer;
+}
+
+#task-table{
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    width: 50%;
+}
+.task-row{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.task-date{
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+.task-title{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
