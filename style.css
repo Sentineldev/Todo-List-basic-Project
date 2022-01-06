@@ -90,26 +90,26 @@ body{
     width: 32px;
     cursor: pointer;
 }
-
 #task-table{
-    margin: 0 auto;
-    padding: 1rem;
-    color: white;
-    width: 50%;
-}
-.task-row{
     background-color: red;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    padding: 2rem;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.task-date{
-    font-size: 2.4rem;
-    margin: 1rem 0;
+.task-date , .task-title,.task-icons {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    border-bottom: 1px dotted;
+    padding: 1rem;
 }
-.task-title{
-    font-size: 2rem;
-    margin: 2rem 0;
+.task-date h1,.task-title h1{
+    font-size: 1.4rem;
+    border-right: 1px solid;
+    padding: 1rem;
+}
+
+.task-date h1{
+    width: 100%;
 }
