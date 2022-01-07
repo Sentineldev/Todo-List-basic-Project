@@ -9,12 +9,12 @@ html{
 
 header{
     color: white;
-    text-align: center;
-    display: block;
-    background-color: rgb(0, 159, 253); 
+    display: inline-block;
+    margin: 2rem 2rem;
+    font-size: 1.6rem;
 }
 body{
-    background-color: rgb(35, 37, 40);
+    background: linear-gradient(to bottom right, rgb(0,0,0), rgb(35, 37, 40), rgb(35, 57, 80));
 }
 button{
     background-color: rgb(0, 159, 253); 
@@ -38,7 +38,7 @@ button:active{
     text-align: center;
 }
 #create-form{
-    background-color: rgb(234, 246, 255);
+    background-color: rgb(214, 236, 255);
     border-radius: 0.4rem;
     box-shadow: 0px 0px 1px rgb(0, 159, 253),0px 0px 2px rgb(0, 159, 253);
     margin: 0 auto;
@@ -121,7 +121,7 @@ button:active{
     cursor: pointer;
 }
 #task-table{
-    background-color: rgb(234, 246, 255);
+    background-color: rgb(214, 236, 255);
     border-collapse: collapse;
     width: 50%;
     margin: 0 auto;
