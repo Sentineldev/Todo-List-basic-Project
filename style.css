@@ -10,11 +10,16 @@ html{
 header{
     color: white;
     display: inline-block;
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
     font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 700;
 }
 body{
-    background: linear-gradient(to bottom right, rgb(0,0,0), rgb(35, 37, 40), rgb(35, 57, 80));
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(0,0,0), rgb(35, 37, 40), rgb(35, 57, 80));
+    position: relative;
+    padding-bottom: 8rem;
 }
 button{
     background-color: rgb(0, 159, 253); 
@@ -127,6 +132,7 @@ button:active{
     margin: 0 auto;
     border-radius: 0.4rem;
     box-shadow: 0px 0px 1px rgb(42, 42, 114),0px 0px 2px rgb(42, 42, 114);
+    padding: 1rem;
 }
 
 .task-date , .task-title,.task-icons {
@@ -148,8 +154,12 @@ button:active{
     color: white;
     text-align: center;
 }
-#footer-text{
+footer{
     color: white;
     text-align: center;
-    padding-top: 200px;
+    font-size: 1.6rem;
+    width: 100%;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 0;
 }
