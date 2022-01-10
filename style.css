@@ -114,8 +114,10 @@ button:active{
 }
 
 #create-task-form-header{
-    padding: 2rem 0;
-    font-size: 2.4rem;
+    padding: 1.4rem 0;
+    font-size: 2rem;
+    background-color: rgba(3, 71, 150, 0.932);
+    color: white;
 }
 .input-create{
     padding: 0.8rem 0.5rem;
@@ -133,6 +135,7 @@ button:active{
     border-radius: 0.4rem;
     box-shadow: 0px 0px 1px rgb(42, 42, 114),0px 0px 2px rgb(42, 42, 114);
     padding: 1rem;
+    border-top-left-radius: 0.4rem;
 }
 
 .task-date , .task-title,.task-icons {
@@ -151,8 +154,11 @@ button:active{
     width: 100%;
 }
 #table-header{
-    color: white;
+    color: rgba(233, 233, 233, 0.932);
     text-align: center;
+    background-color: rgba(3, 71, 150, 0.932);
+    padding: 1.4rem;
+    font-size: 2rem;
 }
 footer{
     color: white;
